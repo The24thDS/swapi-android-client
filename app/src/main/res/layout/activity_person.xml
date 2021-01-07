@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".activities.PersonActivity">
+
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="name"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/person_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:text="Height: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/person_name" />
+
+    <TextView
+        android:id="@+id/person_mass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mass: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/person_height"
+        app:layout_constraintTop_toBottomOf="@+id/person_height" />
+
+    <TextView
+        android:id="@+id/person_hair_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hair color: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/person_mass"
+        app:layout_constraintTop_toBottomOf="@+id/person_mass" />
+
+    <TextView
+        android:id="@+id/person_skin_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skin color: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/person_hair_color"
+        app:layout_constraintTop_toBottomOf="@+id/person_hair_color" />
+
+    <TextView
+        android:id="@+id/person_eye_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eye color: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/person_skin_color"
+        app:layout_constraintTop_toBottomOf="@+id/person_skin_color" />
+
+    <TextView
+        android:id="@+id/person_birth_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birth year: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/person_eye_color"
+        app:layout_constraintTop_toBottomOf="@+id/person_eye_color" />
+
+    <TextView
+        android:id="@+id/person_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/person_birth_year"
+        app:layout_constraintTop_toBottomOf="@+id/person_birth_year" />
+</androidx.constraintlayout.widget.ConstraintLayout>

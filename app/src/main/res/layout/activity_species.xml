@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".activities.SpeciesActivity">
+
+    <TextView
+        android:id="@+id/species_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="name"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/species_classification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:text="Classification: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/species_name" />
+
+    <TextView
+        android:id="@+id/species_designation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Designation: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/species_classification"
+        app:layout_constraintTop_toBottomOf="@+id/species_classification" />
+
+    <TextView
+        android:id="@+id/species_average_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average height: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/species_designation"
+        app:layout_constraintTop_toBottomOf="@+id/species_designation" />
+
+    <TextView
+        android:id="@+id/species_skin_colors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skin colors: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/species_average_height"
+        app:layout_constraintTop_toBottomOf="@+id/species_average_height" />
+
+    <TextView
+        android:id="@+id/species_hair_colors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hair colors: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/species_skin_colors"
+        app:layout_constraintTop_toBottomOf="@+id/species_skin_colors" />
+
+    <TextView
+        android:id="@+id/species_eye_colors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eye colors: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/species_hair_colors"
+        app:layout_constraintTop_toBottomOf="@+id/species_hair_colors" />
+
+    <TextView
+        android:id="@+id/species_average_lifespan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average lifespan: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/species_eye_colors"
+        app:layout_constraintTop_toBottomOf="@+id/species_eye_colors" />
+
+    <TextView
+        android:id="@+id/species_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Language: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/species_average_lifespan"
+        app:layout_constraintTop_toBottomOf="@+id/species_average_lifespan" />
+</androidx.constraintlayout.widget.ConstraintLayout>

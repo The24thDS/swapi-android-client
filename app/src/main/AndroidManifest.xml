@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="dev.davidsima.swdata">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".activities.StarshipActivity" />
+        <activity android:name=".activities.StarshipsActivity" />
+        <activity android:name=".activities.VehicleActivity" />
+        <activity android:name=".activities.VehiclesActivity" />
+        <activity android:name=".activities.SpeciesActivity"></activity>
+        <activity android:name=".activities.SpeciesListActivity" />
+        <activity android:name=".activities.PlanetActivity" />
+        <activity android:name=".activities.PlanetsActivity" />
+        <activity android:name=".activities.PersonActivity" />
+        <activity android:name=".activities.PeopleActivity" />
+        <activity android:name=".activities.FilmsActivity" />
+        <activity android:name=".activities.FilmActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

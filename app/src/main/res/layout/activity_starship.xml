@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".activities.SpeciesActivity">
+
+    <TextView
+        android:id="@+id/starship_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="name"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/starship_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:text="Model: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/starship_name" />
+
+    <TextView
+        android:id="@+id/starship_manufacturer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Manufacturer: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/starship_model"
+        app:layout_constraintTop_toBottomOf="@+id/starship_model" />
+
+    <TextView
+        android:id="@+id/starship_cost_in_credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost in credits: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/starship_manufacturer"
+        app:layout_constraintTop_toBottomOf="@+id/starship_manufacturer" />
+
+    <TextView
+        android:id="@+id/starship_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/starship_cost_in_credits"
+        app:layout_constraintTop_toBottomOf="@+id/starship_cost_in_credits" />
+
+    <TextView
+        android:id="@+id/starship_max_atmospheric_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max atmospheric speed: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/starship_length"
+        app:layout_constraintTop_toBottomOf="@+id/starship_length" />
+
+    <TextView
+        android:id="@+id/starship_crew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crew: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/starship_max_atmospheric_speed"
+        app:layout_constraintTop_toBottomOf="@+id/starship_max_atmospheric_speed" />
+
+    <TextView
+        android:id="@+id/starship_passengers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passengers: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/starship_crew"
+        app:layout_constraintTop_toBottomOf="@+id/starship_crew" />
+
+    <TextView
+        android:id="@+id/starship_cargo_capacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cargo capacity: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/starship_passengers"
+        app:layout_constraintTop_toBottomOf="@+id/starship_passengers" />
+
+    <TextView
+        android:id="@+id/starship_consumables"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consumables: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/starship_cargo_capacity"
+        app:layout_constraintTop_toBottomOf="@+id/starship_cargo_capacity" />
+
+    <TextView
+        android:id="@+id/starship_hyperdrive_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hyperdrive rating: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/starship_consumables"
+        app:layout_constraintTop_toBottomOf="@+id/starship_consumables" />
+
+    <TextView
+        android:id="@+id/starship_mglt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MGLT: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/starship_hyperdrive_rating"
+        app:layout_constraintTop_toBottomOf="@+id/starship_hyperdrive_rating" />
+
+    <TextView
+        android:id="@+id/starship_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/starship_mglt"
+        app:layout_constraintTop_toBottomOf="@+id/starship_mglt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".activities.SpeciesActivity">
+
+    <TextView
+        android:id="@+id/vehicle_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="name"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vehicle_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:text="Model: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vehicle_name" />
+
+    <TextView
+        android:id="@+id/vehicle_manufacturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manufacturer: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/vehicle_model"
+        app:layout_constraintTop_toBottomOf="@+id/vehicle_model" />
+
+    <TextView
+        android:id="@+id/vehicle_cost_in_credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost in credits: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/vehicle_manufacturer"
+        app:layout_constraintTop_toBottomOf="@+id/vehicle_manufacturer" />
+
+    <TextView
+        android:id="@+id/vehicle_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/vehicle_cost_in_credits"
+        app:layout_constraintTop_toBottomOf="@+id/vehicle_cost_in_credits" />
+
+    <TextView
+        android:id="@+id/vehicle_max_atmospheric_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max atmospheric speed: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/vehicle_length"
+        app:layout_constraintTop_toBottomOf="@+id/vehicle_length" />
+
+    <TextView
+        android:id="@+id/vehicle_crew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crew: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/vehicle_max_atmospheric_speed"
+        app:layout_constraintTop_toBottomOf="@+id/vehicle_max_atmospheric_speed" />
+
+    <TextView
+        android:id="@+id/vehicle_passengers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passengers: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/vehicle_crew"
+        app:layout_constraintTop_toBottomOf="@+id/vehicle_crew" />
+
+    <TextView
+        android:id="@+id/vehicle_cargo_capacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cargo capacity: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/vehicle_passengers"
+        app:layout_constraintTop_toBottomOf="@+id/vehicle_passengers" />
+
+    <TextView
+        android:id="@+id/vehicle_consumables"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consumables: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/vehicle_cargo_capacity"
+        app:layout_constraintTop_toBottomOf="@+id/vehicle_cargo_capacity" />
+
+    <TextView
+        android:id="@+id/vehicle_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/vehicle_consumables"
+        app:layout_constraintTop_toBottomOf="@+id/vehicle_consumables" />
+</androidx.constraintlayout.widget.ConstraintLayout>

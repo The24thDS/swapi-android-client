@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".activities.PersonActivity">
+
+    <TextView
+        android:id="@+id/planet_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="name"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/planet_rotation_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:text="Rotation Period: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planet_name" />
+
+    <TextView
+        android:id="@+id/planet_orbital_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orbital Period: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/planet_rotation_period"
+        app:layout_constraintTop_toBottomOf="@+id/planet_rotation_period" />
+
+    <TextView
+        android:id="@+id/planet_diameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diameter: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/planet_orbital_period"
+        app:layout_constraintTop_toBottomOf="@+id/planet_orbital_period" />
+
+    <TextView
+        android:id="@+id/planet_climate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Climate: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/planet_diameter"
+        app:layout_constraintTop_toBottomOf="@+id/planet_diameter" />
+
+    <TextView
+        android:id="@+id/planet_gravity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gravity: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/planet_climate"
+        app:layout_constraintTop_toBottomOf="@+id/planet_climate" />
+
+    <TextView
+        android:id="@+id/planet_terrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terrain: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/planet_gravity"
+        app:layout_constraintTop_toBottomOf="@+id/planet_gravity" />
+
+    <TextView
+        android:id="@+id/planet_surface_water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Surface Water: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/planet_terrain"
+        app:layout_constraintTop_toBottomOf="@+id/planet_terrain" />
+
+    <TextView
+        android:id="@+id/planet_population"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Population: "
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/planet_surface_water"
+        app:layout_constraintTop_toBottomOf="@+id/planet_surface_water" />
+</androidx.constraintlayout.widget.ConstraintLayout>
